@@ -1,0 +1,38 @@
+.Landing1 {
+  background-image: url("/logo_title/sebastian-svenson-d2w-_1LJioQ-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 800px; /* set a fixed height */
+  overflow-y: auto; /* enable vertical scrolling within the element */
+  overflow-y: scroll; /* enable vertical scrolling */
+  scroll-behavior: smooth; /* enable smooth scrolling */
+  
+}
+
+.LandingChild1 {
+  position: relative;
+  top: 396px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} 
+  .LandingChild1 h1{
+    color: #fffbf4;
+  margin: 0px;
+  font-size: xxx-large;
+  display: block;
+}
+.LandingChild1 p{
+  margin: 0px;
+  display: block;
+  color: #dac19c;
+  text-shadow: 3px;
+  
+}
+.LandingChild2 {
+  position: relative;
+  top: 580px;
+  left: 47%;
+
+}

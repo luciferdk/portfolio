@@ -1,0 +1,133 @@
+:root {
+  margin: 0%;
+  padding: 0%;
+  /* background-color: red; */
+}
+
+body {
+  padding: 0%;
+  margin: 0%;
+  font-size: 1em;
+  scroll-behavior: smooth;
+}
+
+.parents {
+
+  background-color: #e2b1bf;
+}
+
+.nav {
+  width: 100%;
+  display: block;
+  position: sticky;
+  top: 0;
+}
+
+
+/* Basic navbar styling */
+.nav0 {
+  width: 97%;
+  color: #ffffff;
+  display: flex;
+  /* Make the navbar elements display horizontally */
+  justify-content: space-between;
+  /* Distribute elements evenly with some space between them */
+  align-items: center;
+  padding: 0px 20px;
+  position: absolute;
+  z-index: 100000;
+  padding-top: 5px;
+  /* margin: 5px; */
+  
+}
+
+/* Style the logo section */
+.nav1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav1 img {
+  border-radius: 50%;
+  /* padding: 2px; */
+  /* scale: 1 1; */
+  height: 47px;
+
+}
+
+/* Style the navigation links section */
+.nav2 {
+  display: flex;
+  /* Make the navigation links display horizontally */
+  list-style: none;
+  /* Remove default list styling (bullets) */
+  margin: 0;
+  /* Remove default margins */
+  padding: 0;
+  /* Remove default padding */
+}
+
+.nav2 p {
+  margin: 0 10px;
+  /* Add some margin between links */
+  cursor: pointer;
+  /* Set cursor to pointer on hover for clarity */
+  font-size: 20px;
+  /* making some text bigger */
+  padding: 10px;
+}
+
+/* Style the social media icons section */
+.nav3 {
+  display: flex;
+  /* flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center; */
+  /* Make the social media icons display horizontally */
+}
+
+.nav3 i {
+  margin: 0 5px;
+  /* Add some margin and padding between icons */
+  padding: 10px;
+  /* height: 32px; */
+  font-size: 32px;
+  cursor: pointer;  /* Set cursor to pointer on hover for clarity */
+
+}.nav3 img {
+  margin: 0 5px;
+  /* Add some margin and padding between icons */
+  padding: 10px;
+  height: 32px;
+  cursor: pointer;  /* Set cursor to pointer on hover for clarity */
+
+}
+
+/* You can add specific styles for hover effects, colors, etc. */
+.nav2 p:hover,
+.nav3 img:hover {
+  color: #ff0000;
+  /* Change text color on hover */
+}
+
+
+
+@media only screen and (max-width: 768px) {
+
+  /* Styles for screens less than 768px wide */
+  .my-element {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+  /* Styles for screens between 768px and 1024px wide */
+  .my-element {
+    font-size: 18px;
+  }
+}
