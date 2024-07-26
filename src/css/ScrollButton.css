@@ -1,0 +1,71 @@
+/* ScrollButton.css */
+.scroll-button {
+    position: relative;
+    width: 50px;
+    height: 100px;
+    margin: 0 auto;
+    cursor: pointer;
+    border: 2px solid #6200ea;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.arrow {
+    position: relative;
+    width: 90px;
+    height: 65px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: arrowBounce 4s infinite;
+}
+
+.lightning-line {
+    width: 4px;
+    height: 100%;
+    background-color: #6200ea;
+    clip-path: polygon(0 0, 50% 10%, 25% 30%, 50% 40%, 0 100%);
+    animation: lightning 2s infinite;
+    opacity: 0;
+}
+
+.arrow-head {
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 9px solid #6200ea;
+    margin-top: -7px;
+    opacity: 0;
+    animation: arrowAppear 2s infinite;
+}
+
+@keyframes lightning {
+    0%, 60%, 100% {
+        opacity: 0;
+    }
+    10%, 50% {
+        opacity: 1;
+    }
+}
+
+@keyframes arrowAppear {
+    0%, 60%, 100% {
+        opacity: 0;
+    }
+    70%, 90% {
+        opacity: 1;
+    }
+}
+
+@keyframes arrowBounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+}

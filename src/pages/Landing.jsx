@@ -1,6 +1,7 @@
 //for lazy component landing page route
 import { useNavigate } from 'react-router-dom';
 import '../css/Landing.css'
+import '../css/ScrollButton.css'
 
 export default function Landing() {
   return (
@@ -10,18 +11,38 @@ export default function Landing() {
           <p>SOFTWARE ENGINEER, BACK-END & FRONT-END. <br></br> #DEV.</p>
         </div>
         <div className='LandingChild2'>
-          <Button />
+          <ScrollButton />
+          {/* <Button /> */}
         </div>
     </div>
   );
   }
   
-  const Button = () => {
-    const navigate = useNavigate();
+  // const Button = () => {
+  //   const navigate = useNavigate();
   
-    const handleClick = () => {
-      navigate('/Expertise');
-    };
+  //   const handleClick = () => {
+  //     navigate('/Expertise');
+  //   };
   
-    return <button onClick={handleClick}>Click me</button>;
-  };
+  //   return <button onClick={handleClick}>Click me</button>;
+  // };
+
+
+
+  const ScrollButton = () => {
+       const navigate = useNavigate();
+
+     const handleClick = () => {
+            navigate('/Expertise');
+          };
+
+    return (
+        <div className="scroll-button" onClick={handleClick}>
+            <div className="arrow">
+                <div className="lightning-line"></div>
+                <div className="arrow-head"></div>
+            </div>
+        </div>
+    );
+};

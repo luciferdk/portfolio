@@ -1,7 +1,6 @@
 import '../css/Expertise.css'
 
 
-
 export default function Expertise() {
   return  (
     <div className='Expertise1'>
